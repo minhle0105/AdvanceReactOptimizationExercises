@@ -1,19 +1,19 @@
-import { format } from 'date-fns';
+import {format} from 'date-fns';
 
 import './styles.css';
 
 const Details = (props) => {
-  const reservationDateAndTime = format(
-    new Date('2022-04-26T23:30:00.000Z'),
-    'MM/d/yyyy h:mma'
-  );
+    const reservationDateAndTime = format(
+        new Date('2022-04-26T23:30:00.000Z'),
+        'MM/d/yyyy h:mma'
+    );
 
-  return (
-    <div className='e6-details'>
-      <p>Date and time: {reservationDateAndTime}</p>
-      <p>Party: 2 adults</p>
-    </div>
-  );
+    return (
+        <div className='e6-details'>
+            <p>Date and time: {reservationDateAndTime}</p>
+            <p>Party: 2 adults</p>
+        </div>
+    );
 };
 
 export default Details;
